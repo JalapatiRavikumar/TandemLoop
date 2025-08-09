@@ -1,0 +1,26 @@
+import java.util.*;
+
+class SeriesOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int num = 1;
+        while (num <= a) {
+            System.out.print(num);
+            if (num + 2 <= a)
+                System.out.print(", ");
+            num += 2;
+        }
+    }
+}
+
+
+Take input – Read an integer a from the user.
+
+Start with 1 – This is the first odd number.
+
+Loop until limit – Use while (num <= a) to keep printing odd numbers within range.
+
+Comma placement – Print a comma only if another odd number will follow.
+
+Move to next odd number – Increase num by 2 each time.
